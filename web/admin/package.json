@@ -1,0 +1,42 @@
+{
+  "name": "syagr-admin",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch -p --optimize-minimize --optimize-occurence-order --optimize-dedupe --progress --devtool source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "admin-config": "",
+    "webpack": "^1.10.0",
+    "webpack-dev-server": "^1.10.1",
+    "babel": "^4.6.0",
+    "babel-core": "^5.2.17",
+    "babel-loader": "^5.0.0",
+    "exports-loader": "^0.6.2",
+    "extract-text-webpack-plugin": "^0.8.0",
+    "protractor": "",
+    "css-loader": "^0.12.0",
+    "es6-promise": "^2.3.0",
+    "ng-annotate-loader": "0.0.2",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "node-sass": "^2.1.1",
+    "sass-loader": "^0.5.0",
+    "file-loader": "^0.8.5",
+    "url-loader": "^0.5.7",
+    "karma": "~0.13",
+    "karma-chrome-launcher": "~0.2.0",
+    "karma-jasmine": "~0.3.3",
+    "karma-ng-html2js-preprocessor": "~0.1.0",
+    "karma-ng-scenario": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-webpack": "~1.7.0"
+  },
+  "dependencies": {
+    "angular-mocks": "^1.4.9",
+    "ng-admin": "^0.9.1",
+    "superagent": "^1.7.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "syagr-login",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Andrey Saygrovskiy"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0",
+    "jquery-validation": ""
+  }
+}

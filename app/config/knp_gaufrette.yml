@@ -1,0 +1,11 @@
+knp_gaufrette:
+    adapters:
+        syagr_local:
+            local:
+                directory:  "%kernel.root_dir%/../web/uploads/"
+                create:     true
+    filesystems:
+        syagr_local:
+            adapter:    syagr_local
+            alias:      syagr_local_filesystem
+    stream_wrapper: ~

@@ -1,0 +1,8 @@
+services:
+    syagr_cms.error_process:
+        class: Syagr\CMSBundle\Service\ErrorProcessService
+    syagr_cms.custom_fields_service:
+        class: Syagr\CMSBundle\Service\CustomFieldsService
+        arguments: ["@doctrine.orm.entity_manager"]
+        calls:
+           - [setMediaManager,    ['@syagr_media.media_manager']]

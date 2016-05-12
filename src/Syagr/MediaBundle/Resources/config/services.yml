@@ -1,0 +1,17 @@
+services:
+    syagr_media.media_provider:
+        class: Syagr\MediaBundle\Service\ProviderService
+        arguments: [""]
+        calls:
+          - [setFilesystemMap, ["@knp_gaufrette.filesystem_map"]]
+    syagr_media.media_context:
+        class: Syagr\MediaBundle\Service\ContextService
+        arguments: [""]
+        calls:
+          - [setProviderService, ['@syagr_media.media_provider']]
+    syagr_media.media_manager:
+        class: Syagr\MediaBundle\Service\MediaManager
+        arguments: ["@doctrine.orm.entity_manager"]
+        calls:
+          - [setContextService,  ["@syagr_media.media_context"]]
+          - [setProviderService, ['@syagr_media.media_provider']]

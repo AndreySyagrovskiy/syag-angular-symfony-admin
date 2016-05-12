@@ -1,0 +1,19 @@
+.authorization-login-panel{
+  display: block;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sa_custom_field{
+	padding-top: 20px;
+	display: block;
+
+	.ng-invalid.ng-touched{
+		border-color: #F01614;
+		/*.ui-select-toggle{
+			border-color: #F01614;
+		}*/
+	}
+}
+@import 'repeat';

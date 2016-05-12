@@ -1,0 +1,49 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: andrey
+ * Date: 06.01.16
+ * Time: 16:04
+ */
+
+namespace Syagr\AuthorizationRestApiBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use AppBundle\Entity\User;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="authra_user_tokens")
+ */
+class UserToken
+{
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(length=255, unique=true)
+     */
+    protected $token;
+
+    /**
+     * @ORM\Column(length=255, name="refresh_token", unique=true)
+     */
+    protected $refreshToken;
+
+    /**
+     * @ORM\Column(type="date", name="expired_date")
+     */
+    protected $expiredDate;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="\AppBundle\Entity\User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    protected $user;
+
+
+}

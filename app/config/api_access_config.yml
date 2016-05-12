@@ -1,0 +1,15 @@
+parameters:
+  api_access:
+    ROLE_ADMIN:
+      pages:
+        - edit
+        - show
+        - list
+        - delete
+        - create
+    ROLE_USER:
+      pages:
+        - show
+    DEFAULT:
+      pages:
+        - show

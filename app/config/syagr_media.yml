@@ -1,0 +1,15 @@
+syagr_media:
+  context:
+    default:
+      providers:
+        - syagr_media.providers.file
+        - syagr_media.providers.image
+  providers:
+    file:
+      filesystem:               syagr_local
+      allowed_mime_types:       ['application/pdf', 'application/x-pdf', 'image/pjpeg', 'image/jpeg']
+      allowed_files_extensions: ['pdf', 'jpeg']
+    image:
+      filesystem:               syagr_local
+      allowed_mime_types:       ['image/pjpeg', 'image/jpeg', 'image/png', 'image/x-png']
+      allowed_files_extensions: ['jpeg', 'png']

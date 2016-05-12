@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/ng-admin/build/ng-admin.min.css">
+    <link rel="stylesheet" type="text/css" href="build/main.min.css">
+</head>
+    <body ng-app="syagradmin.app">
+        <div ui-view></div>
+        <script src="/api/authorization/userdata.js"></script>
+        <script src="/api/customs/customconfig.js"></script>
+        <script src="/bundles/fosjsrouting/js/router.js"></script>
+        <script src="/js/routing?callback=fos.Router.setData"></script>
+        <script src="bower_components/ng-admin/build/ng-admin.min.js" ></script>
+        <script type="text/javascript" src="node_modules/angular-mocks/angular-mocks.js"></script>  
+        <script src="build/main.min.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+services:
+    syagr.token_authenticator:
+        class: Syagr\AuthorizationRestApiBundle\Security\TokenAuthenticator
+        arguments: ["@doctrine.orm.entity_manager"]
+        calls:
+            - [setAuthorizationManager, ["@syagr.authorization_rest_api.athorization_manager"]]
+
+    syagr.authorization_rest_api.athorization_manager:
+            class: Syagr\AuthorizationRestApiBundle\Service\AuthorizationManager
+            calls:
+                - [setEntityManager, ["@doctrine.orm.entity_manager"]]
+                - [setTrans, ["@translator"]]
+                - [setEncoderFactory, ["@security.encoder_factory"]]
+                - [setContainer, ["@service_container"]]

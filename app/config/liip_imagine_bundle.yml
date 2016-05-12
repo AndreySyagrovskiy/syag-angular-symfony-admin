@@ -1,0 +1,10 @@
+liip_imagine:
+    loaders:
+        stream.loader:
+            stream:
+                wrapper: 'gaufrette://'
+    data_loader: stream.loader
+    filter_sets:
+        my_thumb_out:
+            filters:
+                thumbnail: { size: [32, 32], mode: outbound }

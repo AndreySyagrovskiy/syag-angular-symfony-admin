@@ -1,0 +1,33 @@
+syagr_media:
+    resource: "@SyagrMediaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+syagr_authorization_rest_api:
+    resource: "@SyagrAuthorizationRestApiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+syagr_cms:
+    resource: "@SyagrCMSBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+syagr_page:
+    resource: "@SyagrPageBundle/Controller/"
+    type:     annotation
+    prefix:   /api/v1
+
+
+app_bundle:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+    options:
+        expose: true
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

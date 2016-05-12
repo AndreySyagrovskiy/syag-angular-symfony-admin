@@ -1,0 +1,71 @@
+parameters:
+  customfields:
+    page:
+      style1:
+        fields:
+          file:
+            type: 'file'
+            label: 'File'
+            validation:
+              required: true
+          repeat:
+            type: 'repeat'
+            label: 'Repeat'
+            fields:
+              wysiwyg:
+                type: 'wysiwyg'
+                label: 'Wysiwyg'
+                validation:
+                  required: true
+              email:
+                type: 'email'
+                label: 'Email'
+                validation:
+                  required: true
+      style2:
+        fields:
+          input:
+            type: 'input'
+            label: 'Input'
+            validation:
+              required: true
+          email:
+            type: 'email'
+            label: 'Email'
+            validation:
+              required: true
+
+          text:
+            type: 'text'
+            label: 'Text'
+            validation:
+              required: true
+          wysiwyg:
+            type: 'wysiwyg'
+            label: 'Wysiwyg'
+            validation:
+              required: true
+
+          datetime:
+            type: 'datetime'
+            label: 'Datetime'
+            validation:
+              required: true
+
+          boolean:
+            type: 'boolean'
+            label: 'Boolean'
+            validation:
+              required: true
+          choice1:
+            type: 'choice'
+            label: 'Choice'
+            choices:
+              -
+                label: 'Value1'
+                value: 'value1'
+              -
+                label: 'Value2'
+                value: 'value2'
+            validation:
+              required: true

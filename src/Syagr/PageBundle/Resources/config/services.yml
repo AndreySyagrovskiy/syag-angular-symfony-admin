@@ -1,0 +1,6 @@
+services:
+    syagr_page.page_manager:
+        class: Syagr\PageBundle\Service\PageManager
+        calls:
+            - [setEntityManager, ["@doctrine.orm.entity_manager"]]
+            - [setTrans, ["@translator"]]

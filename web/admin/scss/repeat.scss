@@ -1,0 +1,31 @@
+.close-button{
+	color: red;
+	padding-top: 4px;
+	padding-left: 26px;
+}
+
+.no-padding-left{
+	padding-left: 0;
+}
+.no-padding-right{
+	padding-right: 0;
+}
+.repeat-item{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding-bottom: 20px;
+	margin-bottom: 5px;
+}
+.add-button{
+	color: white;
+	background-color: #0ACF00;
+	border-color: #0ACF00;
+	.add-button-icon{
+		margin-right: 3px;
+	}
+}
+.add-button:hover{
+	color: white;
+	background-color: green;
+	border-color: green;
+}

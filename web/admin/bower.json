@@ -1,0 +1,22 @@
+{
+  "name": "syagr-admin",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Andrey Saygrovskiy"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng-admin": "~0.9.1"
+  }
+}
